@@ -1,0 +1,4 @@
+# .gitignore
+.vscode/
+venv/
+mango_leaf_disease_model.h5

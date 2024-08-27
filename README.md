@@ -60,4 +60,8 @@ Mango Leaf Disease Prediction/
 
 Contributions are welcome! If you'd like to contribute to this project or report issues, please visit the [GitHub repository](https://github.com/Mark-Finley/Mango-Leaf-Disease-Classifier.git) for more information.
 
+To contribute:
+  - create a branch "branch/featureName"
+  - commit to the branch and create pull request.
+
 Feel free to contribute, report issues, or provide feedback. Happy coding!

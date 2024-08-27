@@ -64,13 +64,16 @@ def main():
         
         # Display the result
         if predicted_class is not None:
-            st.write('Class:', predicted_class)
-            # st.write('Prediction Probabilities:', prediction_probabilities)
-
+            st.write('Diseased Mango Leaf with Class:', predicted_class)
+            
             # Provide recommendations
             if predicted_class != 'Healthy':
                 st.subheader("Recommendations:")
-                st.write(disease_recommendations[predicted_class])
+                # Split recommendations into a list
+                recommendations_list = disease_recommendations[predicted_class].split('. ')
+                # Display recommendations as a numbered list
+                for i, recommendation in enumerate(recommendations_list):
+                    st.write(f"{i+1}. {recommendation}")
         else:
             st.write("Cannot classify the image. Please make sure the uploaded image is a valid image of a mango leaf.")
 
